@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picky eater survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="surveyimg">
+      <h1 id="title">PICKY EATER SURVEY FORM</h1>
+      <h3 id="subtitle">
+        You've been selected to participate on our survey of your own
+        accord/forced by concerned friends and family! Congrats!
+      </h3>
+      <p id="description">
+        Either way, thank you for taking your time to answer these quick
+        questions for our survey!
+      </p>
+      <form id="survey-form" method="post" action="Data.txt">
+        <div>
+          <label for="name-label" id="name-label" class="info"
+            >Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="info"
+              placeholder="First and last name"
+              required
+          /></label>
+          <label for="email-label" id="email-label" class="info"
+            >E-mail
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="info"
+              placeholder="youremail@mail.com"
+              required
+          /></label>
+          <label for="number-label" id="number-label" class="info"
+            >Number
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="8"
+              max="14"
+              class="info"
+              placeholder="Phone number"
+              required
+          /></label>
+        </div>
+        <div>
+          <label for="dropdown"
+            >Pick the option that best describes your experience as a picky
+            eater:
+            <select id="dropdown" name="dropdown" class="dropselect">
+              <option value="">(Select one)</option>
+              <option value="1">God has forsaken me since my birth</option>
+              <option value="2">Tummy hurty like all the time</option>
+              <option value="3">
+                Most food just don't pass the vibe check tbh
+              </option>
+              <option value="4">
+                When pandas eat bamboo every day, it's a natural phenomenon,
+                BUUUUUT when *I* eat dry spaghetti at 2AM on my kitchen floor,
+                apparently 'I have a problem'
+              </option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <legend>Select an aspect of food that puts you off the most</legend>
+          <label for="texture"
+            ><input
+              type="radio"
+              id="texture"
+              name="aspect"
+              class="inline"
+              value="1"
+            />Texture</label
+          >
+          <label for="taste"
+            ><input
+              type="radio"
+              id="taste"
+              name="aspect"
+              class="inline"
+              value="2"
+            />Taste</label
+          >
+          <label for="both"
+            ><input
+              type="radio"
+              id="both"
+              name="aspect"
+              class="inline"
+              value="3"
+            />Both</label
+          >
+        </div>
+        <div>
+          <legend>Select the flavours you dislike the most</legend>
+          <input
+            id="sweet"
+            type="checkbox"
+            name="flavours"
+            value="sweet"
+          /><label for="sweet">Sweet</label>
+          <input
+            id="salty"
+            type="checkbox"
+            name="flavours"
+            value="salty"
+          /><label for="salty">Salty</label>
+          <input id="sour" type="checkbox" name="flavours" value="sour" /><label
+            for="sour"
+            >Sour</label
+          >
+          <input
+            id="bitter"
+            type="checkbox"
+            name="flavours"
+            value="bitter"
+          /><label for="bitter">Bitter</label>
+          <input
+            id="umami"
+            type="checkbox"
+            name="flavours"
+            value="umami"
+          /><label for="umami">Umami</label>
+        </div>
+        <div>
+          <label id="feedback"
+            >Give us feedback regarding the survey! Do it now!
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="3"
+              cols="50"
+              placeholder="I've been trapped in this survey for the past year please help me"
+            ></textarea>
+          </label>
+        </div>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

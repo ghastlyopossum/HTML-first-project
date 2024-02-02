@@ -1,0 +1,94 @@
+body {
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-family: Tahoma;
+    background: linear-gradient(#77604b, #403429, #1d1812);
+    background-image: url(images/food.jpg);
+    padding: 59px;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+h1, h3, p {
+    text-align: center;
+    margin: 1em auto;
+    width: 60vw;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.surveyimg {
+    width: 50%;
+    background-color: #cabaac;
+    box-shadow:  0 0 30px 0 #090806;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 60vw;
+    max-width: 700px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+div {
+    border: none;
+    padding: 20px 0;
+    border-bottom: 2px solid #836953;
+}
+
+div:last-of-type {
+    border-bottom: none;
+}
+
+.info {
+    display: inline;
+    width: 20%;
+    margin-left: 2px;
+}
+
+label {
+    display: inline;
+    margin: 20px 0;
+  }
+
+.dropselect {
+    width: 150px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.inline {
+    width: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+input[type="checkbox"] {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+input, textarea {
+    background-color: #e4dbd4;
+    border: 1px solid #272019;
+    color: black;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #836953;
+    border-color: #272019;
+    min-width: 300px;
+  }
