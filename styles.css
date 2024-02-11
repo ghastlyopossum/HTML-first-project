@@ -4,7 +4,7 @@ body {
     margin: auto;
     font-family: Tahoma;
     background: linear-gradient(#77604b, #403429, #1d1812);
-    background-image: url(images/food.jpg);
+    background-image: url(food.jpg);
     padding: 59px;
 }
 
